@@ -42,10 +42,6 @@ It has already defined the ip, then for interacting with new addresses you must 
 go test -v raft_integration_test.go 
 ```
 
-## Raft usage.
-For using the raft module apart to another desired application, create the new main file with your application logic (the state machine), and import the raft code for creating the correspondent raft node, furthermore, don't forget about modify [the operation struct] defined in the raft code (in the future I'll manage a way for implementing a generic operation for break this dependency and convert the raft code fully modular). Its recommended to check, before starting to work with it, files like the raft code itself or the given examples for the raft node and the state machine creation under an specific service (in my case, the key-value storage service example) or the small client implementations for testing the raft node behaviour.
-
-
 ## Notes
 - Developed with ***go1.17.2 windows/amd64.***
 - It can be compiled on both linux and windows. 
