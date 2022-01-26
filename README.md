@@ -11,30 +11,18 @@ Pass as many addresses as raft nodes you want and indicate which one, the curren
 ```bash
 # Run it immediatly.
 go run storage_srvraft.go <me> <ip/dns:port>...
-
-# Or if you preffer, you can build and launch it.
-go build storage_srvraft.go
-{storage_srvraft|./storage_srvraft} <me> <ip/dns:port>...
 ```
 
 Sends operation to the server indefinitely.
 ```bash
 # Run it immediatly.
 go run simple_cltraft.go <ip/dns:port>...
-
-# Or if you preffer, you can build and launch it.
-go build simple_cltraft.go 
-{simple_cltraft|./simple_cltraft} <ip/dns:port>...
 ```
 
 Implements several operations to interact with the raft server.
 ```bash
 # Run it immediatly.
 go run interactive_cltraft.go <ip/dns:port>...
-
-# Or if you preffer, you can build and launch it.
-go build interactive_cltraft.go
-{interactive_cltraft|./interactive_cltraft} <ip/dns:port>...
 ```
 
 It has already defined the ip, then for interacting with new addresses you must change them.
